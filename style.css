@@ -43,7 +43,8 @@ html, body {
   
   .header h1 {
     margin: 0 0 10px 0;
-   font-family: var(--ff-sans-cond)
+   font-family: var(--ff-sans-cond);
+   font-size: 32px;
   }
   
   .header select {
