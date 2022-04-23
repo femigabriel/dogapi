@@ -1,0 +1,82 @@
+html, body {
+    height: 100%;
+  }
+  * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    :root {
+      --clr-dark: 230 35% 7%;
+      --clr-light: 231 77% 90%;
+      --clr-white: 0 0% 100%;
+    
+      /* font-families */
+      --ff-serif: "Bellefair", serif;
+      --ff-sans-cond: "Barlow Condensed", sans-serif;
+      --ff-sans-normal: "Barlow", sans-serif;
+    }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+     color: hsl(var(--clr-dark));
+     font-family: var(--ff-sans-cond);
+     line-height: 1.6;
+  }
+  
+  .app {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 20px 0;
+   background: hsl(var(--clr-light));
+  }
+  
+  .header h1 {
+    margin: 0 0 10px 0;
+   font-family: var(--ff-sans-cond)
+  }
+  
+  .header select {
+    font-size: 1.6rem;
+    font-family: var(--ff-serif);
+    height: 40px;
+    width: 35%;
+    
+
+  }
+  
+  .slideshow {
+    flex: 1;
+    background: hsl(var(--clr-dark));
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    opacity: 0;
+    transform: scale(1);
+    transition: all .9s ease-out;
+  }
+  
+  .slide:nth-last-child(2) {
+    opacity: 1;
+    transform: scale(1.08);
+  }
